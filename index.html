@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ysabeau+Infant:ital,wght@1,700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap" rel="stylesheet">
+    <title>Осетинское лото - играть онлайн</title>
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <div class="logo">
+                <img class="image"src="ае- лото.png">
+                <div class="logoname">
+                    <div>
+                        Осетинское
+                    </div>
+                    <div>
+                        Лото
+                    </div>
+                </div>
+            </div>         
+        </a>
+        <div class="menu">
+            <span><a href="directions.html">Информация и правила</a></span>
+            <span style="cursor: pointer;" onclick="document.querySelector('.enter').style.display='block';">Вход</span>
+            <span>Регистрация</span>
+        </div>
+    </header>
+    <main>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="firstslide.png"></div>
+              <div class="swiper-slide"><img src="secondslide.png"></div>
+              <div class="swiper-slide"><img src="thirdslide.png"></div>
+              <div class="swiper-slide"><img src="fourthslide.png"></div>
+              <div class="swiper-slide"><img src="fifthslide.png"></div>
+              <div class="swiper-slide"><img src="sixthslide.png"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <script>
+            var swiper = new Swiper(".mySwiper", {
+              spaceBetween: 30,
+              navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+              },
+              pagination: {
+                el: ".swiper-pagination",
+              },
+              mousewheel: true,
+              keyboard: true,
+            });
+          </script>
+          <div class="button">
+            <button class="btn btn-success" onclick="document.getElementById('parent_popup').style.display='block';">Играть вдвоём без регистрации</button>
+            <br>
+            <br>
+            <button class="btn btn-primary" disabled>Играть c компьютером без регистрации</button>
+          </div>
+          <div id="parent_popup">
+            <div id="popup">
+              <div class="popup-cross" style="cursor: pointer;" onclick="document.getElementById('parent_popup').style.display='none';">
+              </div>
+              <h3>Введите свои имена</h3>
+              <div class="gamerdata">
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Имя первого игрока</label>
+                  <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Первый игрок">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Имя второго игрока</label>
+                  <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Второй игрок">
+                </div>
+                <div class="form-check form-switch">
+                  <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                  <label class="form-check-label" for="flexSwitchCheckChecked">Включить учебные раунды</label>
+                </div>
+                <button type="submit" class="btn btn-success">Играть!</button>
+              </div>
+            </div>
+          </div>
+          <div id="parent_popup" class="enter">
+            <div id="popup">
+              <div class="popup-cross" style="cursor: pointer;" onclick="document.querySelector('.enter').style.display='none';">
+              </div>
+              <h3>Войти</h3>
+              <div class="gamerdata">
+                <form>
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Ввести адрес электронной почты</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Ввести пароль</label>
+                    <input type="password" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                  </div>
+                  <button type="submit" class="btn btn-success">Войти</button>
+                </form>
+              </div>
+            </div>
+          </div>
+    </main>
+</body>
+</html>
