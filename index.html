@@ -127,18 +127,18 @@
         <nav class="loto-gamers">
           <div class="gamer">
             <div style="margin-right:80px" class="gamer-name" id="firstgamername">
-              Первый игрок
+              
             </div>
-            <div class="gamer-score">
-              0
+            <div class="gamer-score" id="firstscore">
+              
             </div>
           </div>
           <div class="gamer" style="margin-left:1100px">
-            <div style="margin-right:80px" class="gamer-score">
-              0
+            <div style="margin-right:80px" class="gamer-score" id="secondscore">
+              
             </div>
             <div  class="gamer-name" id="secondgamername">
-              Второй игрок
+              
             </div>
           </div>
         </nav>
@@ -150,7 +150,13 @@
             <div class="loto-image">
 
             </div>
-            <button style="width:576px; height:100px; font-size: 30px; margin-top:330px"  class="btn btn-success">Начать раунд</button>
+            <button style="width:576px; height:100px; font-size: 30px; margin-top:330px"  class="btn btn-success" id="accelerator">Начать раунд</button>
+            <div style="width:576px; height:100px; font-size: 30px; margin-top:260px; display:none; background-color: rgb(245, 245, 245);" class="loto-info">
+              <span>Следующая картинка будет через</span>
+              <div class="loto-count" id="countdown">---</div>
+              <span>Всего картинок осталось</span>
+              <div class="loto-count" id="pictures">---</div>
+            </div>
           </div>
           <div class="loto-table">
 
