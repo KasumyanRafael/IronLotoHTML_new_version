@@ -24,8 +24,21 @@ button.addEventListener("click",function(){
     let premain=document.querySelector(".main-prev");
     premain.style.display='none';
     loto.style.display='block';
+    document.querySelector("#defaultmenu").style.display='none';
+    document.querySelector("#gamemenu").style.display='block';
 })
 document.querySelector("#accelerator").addEventListener("click",function(){
     document.querySelector("#accelerator").style.display='none';
     document.querySelector(".loto-info").style.display='block';
+})
+document.querySelector("#pause").addEventListener("click",function(){
+    let pause=document.querySelector("#pause");
+    if(pause.textContent==="Пауза"){
+        pause.textContent="Продолжить!";
+        document.querySelector(".pausebar").style.display='block';
+    }
+    else{
+        pause.textContent="Пауза";
+        document.querySelector(".pausebar").style.display='none';
+    }
 })

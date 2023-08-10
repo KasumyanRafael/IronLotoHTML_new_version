@@ -38,11 +38,15 @@
                 </div>
             </div>         
         </a>
-        <div class="menu">
-            <span><a href="directions.html">Информация и правила</a></span>
+        <div class="menu" id="defaultmenu">
+            <span ><a href="directions.html">Информация и правила</a></span>
             <span style="cursor: pointer;" onclick="document.querySelector('.enter').style.display='block';">Вход</span>
-            <span>Регистрация</span>
+            <span >Регистрация</span>
         </div>
+        <div class="menu" id="gamemenu" style="display:none">
+          <span id="pause">Пауза</span>
+          <span>Выход</span> 
+      </div>
     </header>
     <main class="main-prev">
         <div class="swiper mySwiper">
@@ -125,7 +129,7 @@
       <br>
       <div class="loto-field">
         <nav class="loto-gamers">
-          <div class="gamer">
+          <div class="gamer" style="margin-left:40px;">
             <div style="margin-right:80px" class="gamer-name" id="firstgamername">
               
             </div>
@@ -133,7 +137,7 @@
               
             </div>
           </div>
-          <div class="gamer" style="margin-left:1100px">
+          <div class="gamer" style="margin-left:800px">
             <div style="margin-right:80px" class="gamer-score" id="secondscore">
               
             </div>
@@ -144,14 +148,31 @@
         </nav>
         <div class="loto-tables">
           <div class="loto-table">
-
+            <table class="loto-table-field">
+              <tbody>
+                <tr>
+                  <td><img class="loto-tableimage"src="Resources/p6irword.png"></td>
+                  <td><img src="Resources/p6irword.png"></td>
+                </tr>
+                <tr>
+                  <td><img class="loto-tableimage"src="Resources/p6irword.png"></td>
+                  <td><img class="loto-tableimage"src="Resources/p6irword.png"></td>
+                </tr>
+                <tr>
+                  <td><img class="loto-tableimage"src="Resources/p6irword.png"></td>
+                  <td><img class="loto-tableimage"src="Resources/p6irword.png"></td>
+                </tr>
+              </tbody>
+            </table>
           </div>
           <div class="loto-main">
             <div class="loto-image">
-
+              <img src="Resources/p6.png">
             </div>
-            <button style="width:576px; height:100px; font-size: 30px; margin-top:330px"  class="btn btn-success" id="accelerator">Начать раунд</button>
-            <div style="width:576px; height:100px; font-size: 30px; margin-top:260px; display:none; background-color: rgb(245, 245, 245);" class="loto-info">
+            <br>
+            <div class="pausebar">Пауза</div>
+            <button style="width:472px; height:100px; font-size: 30px; margin-top:290px"  class="btn btn-success" id="accelerator">Начать раунд</button>
+            <div style="width:576px; height:100px; font-size: 30px; margin-top:200px; display:none; background-color: rgb(245, 245, 245);" class="loto-info">
               <span>Следующая картинка будет через</span>
               <div class="loto-count" id="countdown">---</div>
               <span>Всего картинок осталось</span>
@@ -159,7 +180,22 @@
             </div>
           </div>
           <div class="loto-table">
-
+            <table class="loto-table-field">
+              <tbody>
+                <tr>
+                  <td><img class="loto-tableimage"src="Resources/p6irword.png"></td>
+                  <td><img src="Resources/p6irword.png"></td>
+                </tr>
+                <tr>
+                  <td><img class="loto-tableimage"src="Resources/p6irword.png"></td>
+                  <td><img class="loto-tableimage"src="Resources/p6irword.png"></td>
+                </tr>
+                <tr>
+                  <td><img class="loto-tableimage"src="Resources/p6irword.png"></td>
+                  <td><img class="loto-tableimage"src="Resources/p6irword.png"></td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </div>

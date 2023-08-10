@@ -157,51 +157,51 @@ a{
 }
 .main-loto{
     display:none;
-    width:1780px;
-    height:780px;
+    width:1456px;
+    height:880px;
     background-color: rgb(224, 224, 224);
     border-radius:20px;
-    margin:60px;
+    margin-top:10px;
+    margin-left:260px;
 }
 .loto-field{
     margin-top:10px;
     background-color: rgb(255,255,255);
     margin-left:20px;
     border-radius: 10px;
-    width:1726px;
-    height:726px;
+    width:1416px;
+    height:796px;
 }
 .loto-gamers{
     display:flex;
-    width:1726px;
+    width:1416px;
     height:80px;
     background-color: rgb(245, 245, 245);
 }
 .gamer{
+    font-size:30px;
     display:flex;
-    font-size: 30px;
-    margin-left:20px;
-    margin-top:10px;
+    width:250px;
 }
 .loto-table{
     background-color: rgb(112, 98, 98);
-    height:640px;
-    width:576px;
+    height:708px;
+    width:472px;
 }
 .loto-main{
     background-color: white;
-    height:640px;
-    width:576px;
+    height:708px;
+    width:472px;
 }
 .loto-tables{
     display:flex;
 }
 .loto-image{
     background-color: rgb(112, 98, 98);
-    width:160px;
-    height:160px;
-    margin-left:200px;
-    margin-top:40px;
+    width:236px;
+    height:236px;
+    margin-left:120px;
+    margin-top:20px;
 }
 .loto-info span{
     font-size: 25px;
@@ -210,7 +210,14 @@ a{
 .loto-info .loto-count{
     margin-left:236px;
 }
-
-
-
+.pausebar{
+    font-size: 25px;
+    margin-top:20px;
+    margin-left:200px;
+    width:80px;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: red;
+    border-radius:10px;
+    display:none;
+}
   
