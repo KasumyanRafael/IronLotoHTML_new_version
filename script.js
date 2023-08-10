@@ -28,5 +28,4 @@ button.addEventListener("click",function(){
 document.querySelector("#accelerator").addEventListener("click",function(){
     document.querySelector("#accelerator").style.display='none';
     document.querySelector(".loto-info").style.display='block';
-    alert("abba");
 })
