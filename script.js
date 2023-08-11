@@ -46,6 +46,7 @@ document.querySelector('#stayongame').addEventListener("click",function(){
     document.querySelector('.stopgame').style.display='none';
 })
 document.querySelector('#exitgame').addEventListener("click",function(){
+    document.querySelector('.stopgame').style.display='none';
     document.querySelector('.main-loto').style.display='none';
     document.querySelector(".main-prev").style.display='block';
     document.querySelector("#gamemenu").style.display='none';
