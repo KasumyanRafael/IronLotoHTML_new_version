@@ -45,7 +45,7 @@
         </div>
         <div class="menu" id="gamemenu" style="display:none">
           <span id="pause">Пауза</span>
-          <span>Выход</span> 
+          <span style="cursor: pointer;" onclick="document.querySelector('.stopgame').style.display='block';">Выход</span> 
       </div>
     </header>
     <main class="main-prev">
@@ -151,23 +151,23 @@
             <table class="loto-table-field">
               <tbody>
                 <tr>
-                  <td><img class="loto-tableimage"src="Resources/p6irword.png"></td>
-                  <td><img src="Resources/p6irword.png"></td>
+                  <td><img class="loto-tableimage"src="Resources/pwhite.png"></td>
+                  <td><img class="loto-tableimage"src="Resources/pwhite.png"></td>
                 </tr>
                 <tr>
-                  <td><img class="loto-tableimage"src="Resources/p6irword.png"></td>
-                  <td><img class="loto-tableimage"src="Resources/p6irword.png"></td>
+                  <td><img class="loto-tableimage"src="Resources/pwhite.png"></td>
+                  <td><img class="loto-tableimage"src="Resources/pwhite.png"></td>
                 </tr>
                 <tr>
-                  <td><img class="loto-tableimage"src="Resources/p6irword.png"></td>
-                  <td><img class="loto-tableimage"src="Resources/p6irword.png"></td>
+                  <td><img class="loto-tableimage"src="Resources/pwhite.png"></td>
+                  <td><img class="loto-tableimage"src="Resources/pwhite.png"></td>
                 </tr>
               </tbody>
             </table>
           </div>
           <div class="loto-main">
             <div class="loto-image">
-              <img src="Resources/p6.png">
+              <img src="Resources/pwhite.png">
             </div>
             <br>
             <div class="pausebar">Пауза</div>
@@ -183,19 +183,32 @@
             <table class="loto-table-field">
               <tbody>
                 <tr>
-                  <td><img class="loto-tableimage"src="Resources/p6irword.png"></td>
-                  <td><img src="Resources/p6irword.png"></td>
+                  <td><img class="loto-tableimage"src="Resources/pwhite.png"></td>
+                  <td><img class="loto-tableimage"src="Resources/pwhite.png"></td>
                 </tr>
                 <tr>
-                  <td><img class="loto-tableimage"src="Resources/p6irword.png"></td>
-                  <td><img class="loto-tableimage"src="Resources/p6irword.png"></td>
+                  <td><img class="loto-tableimage"src="Resources/pwhite.png"></td>
+                  <td><img class="loto-tableimage"src="Resources/pwhite.png"></td>
                 </tr>
                 <tr>
-                  <td><img class="loto-tableimage"src="Resources/p6irword.png"></td>
-                  <td><img class="loto-tableimage"src="Resources/p6irword.png"></td>
+                  <td><img class="loto-tableimage"src="Resources/pwhite.png"></td>
+                  <td><img class="loto-tableimage"src="Resources/pwhite.png"></td>
                 </tr>
               </tbody>
             </table>
+          </div>
+        </div>
+      </div>
+      <div id="parent_popup" class="stopgame" >
+        <div id="popup" style="height:200px; width:500px;">
+          <div class="popup-cross" style="cursor: pointer;" onclick="document.querySelector('.stopgame').style.display='none';">
+          </div>
+          <h4>Вы собираетесь покинуть игру</h4>
+          <h4>Продолжить?</h4>
+          <br>
+          <div style="display: flex;">
+            <button type="button" class="btn btn-danger" style="margin-left:10px;" id="exitgame">Да, я покидаю игру</button>
+            <button type="button" class="btn btn-success" style="margin-left:10px;" id="stayongame">Нет, остаюсь</button>
           </div>
         </div>
       </div>

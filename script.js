@@ -42,3 +42,12 @@ document.querySelector("#pause").addEventListener("click",function(){
         document.querySelector(".pausebar").style.display='none';
     }
 })
+document.querySelector('#stayongame').addEventListener("click",function(){
+    document.querySelector('.stopgame').style.display='none';
+})
+document.querySelector('#exitgame').addEventListener("click",function(){
+    document.querySelector('.main-loto').style.display='none';
+    document.querySelector(".main-prev").style.display='block';
+    document.querySelector("#gamemenu").style.display='none';
+    document.querySelector("#defaultmenu").style.display='block';
+})
