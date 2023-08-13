@@ -30,6 +30,8 @@ button.addEventListener("click",function(){
 document.querySelector("#accelerator").addEventListener("click",function(){
     document.querySelector("#accelerator").style.display='none';
     document.querySelector(".loto-info").style.display='block';
+
+    
 })
 document.querySelector("#pause").addEventListener("click",function(){
     let pause=document.querySelector("#pause");
